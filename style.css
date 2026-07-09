@@ -430,13 +430,33 @@ a{
         height: 40px;
     }
 
-    .hats h1 {
+   .hats h1 {
         font-size: 34px;
+        margin-bottom: 16px;
     }
 
     .hats p {
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 24px;
     }
+
+    .store__title {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .store__address {
+        font-size: 17px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .store__text {
+        font-size: 17px;
+        line-height: 1.5;
+      }
 
     .catalog-grid {
         grid-template-columns: 1fr;
@@ -455,6 +475,10 @@ a{
     .card--large img {
         width: 100%;
         max-width: none;
+    }
+
+      .store {
+        padding: 35px 16px 0;
     }
 
     .store__top {
