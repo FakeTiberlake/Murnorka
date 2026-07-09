@@ -235,9 +235,6 @@ a{
 }
 
 .card--medium img {
-/*     width: 379px;
-    height: 569px;
-    object-fit: cover; */
     width: 100%;
     aspect-ratio: 379 / 569;
     height: auto;
