@@ -113,28 +113,25 @@ a{
 
 }
 
-.header-icons a{
-
-    width:32px;
-    height:32px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.header-icons a:nth-child(1) img {
-    width:45px;
+.header-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
 }
 
-.header-icons a:nth-child(2) img {
-    width:30px;
+.header-icons img {
+    width: 24px;
+    height: 24px;
 }
-
-.header-icons a:nth-child(3) img {
-    width:40px;
-}
-
 
 .hats{
 
