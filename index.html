@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Murnorka_1</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +14,8 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
+  
+  
 <body>
 
 <div class="page">
@@ -35,26 +25,37 @@
         <a class="logo" href="#">
             <img src="logo.svg" alt="Мурнорка">
         </a>
-      
-        <nav class="menu">
+
+
+        <nav class="menu" id="menu">
+
             <a class="menu__link menu__link--active" href="#">
                 Шапки
             </a>
+
             <a class="menu__link" href="#">
                 Шубы
             </a>
+
             <a class="menu__link" href="#">
                 Пошив
             </a>
+
             <a class="menu__link" href="#">
                 Блог
             </a>
+
             <a class="menu__link" href="#">
                 О нас
             </a>
+
         </nav>
 
-  <button class="burger" aria-label="Открыть меню">
+  <button class="burger" 
+    id="burger"
+    type="button"
+    aria-label="Открыть меню"
+    aria-expanded="false">
         <svg
 xmlns="http://www.w3.org/2000/svg"
             width="28"
@@ -71,7 +72,7 @@ xmlns="http://www.w3.org/2000/svg"
       
         <div class="header-icons">
 
-            <a href="#" aria-label="Пользователь">
+            <a href="#" aria-label="Профиль">
                 <img src="user.svg" alt="">
             </a>
 
@@ -98,8 +99,7 @@ xmlns="http://www.w3.org/2000/svg"
             </h1>
 
             <p class="hats__subtitle"> 
-                Новая коллекция шапок из овчины и верблюжьей
-<span>шерсти, которые будут носиться годами<span>
+                Новая коллекция шапок из овчины и верблюжьей шерсти, которые будут носиться годами
             </p>
 
             <img
@@ -108,62 +108,84 @@ xmlns="http://www.w3.org/2000/svg"
                 alt="Девушка в шапке из новой коллекции">
         </section>
 
-
-
         <section class="catalog">
 
-            <h2 class="catalog__title">
-                Женщины
-            </h2>
+    <h2 class="catalog__title">
+        Женщины
+    </h2>
 
+    <div class="catalog-grid">
 
-            <div class="catalog-grid">
+        <article class="card card--large">
 
+            <a href="#" class="card__link">
 
-                <article class="card card--large">
+                <img
+                    src="hat_large.png"
+                    alt="Шапка Снежная"
+                >
+
+                <div class="card__info">
+
+                    <h3>Снежная</h3>
+
+                    <p>29 900 ₽</p>
+
+                </div>
+
+            </a>
+
+        </article>
+
+        <div class="catalog-right">
+
+            <article class="card card--small">
+
+                <a href="#" class="card__link">
 
                     <img
-                        src="hat_large.png"
-                        alt="Шапка Снежная"
+                        src="hat_small.png"
+                        alt="Шапка Горная"
                     >
 
                     <div class="card__info">
 
-                        <h3>
-                            <a href="#" class="card__link">
-                                Снежная </a>
-                        </h3>
-                        <p> 29 900 ₽</p>
+                        <h3>Горная</h3>
+
+                        <p>9 900 ₽</p>
+
                     </div>
 
-                </article>
-              <div class="catalog-right">
-                <article class="card card--small">
-                    <img src="hat_small.png" alt="Шапка Горная">
+                </a>
 
-                    <div class="card__info">
-                        <h3>
-                            <a href="#" class="card__link">Горная</a>
-                        </h3>
-                        <p>9900 ₽</p>
-                    </div>
-                </article>
+            </article>
 
-                <article class="card card--medium">
+            <article class="card card--medium">
 
-                    <img src="hat_middle.png" alt="Шапка Стужа">
+                <a href="#" class="card__link">
+
+                    <img
+                        src="hat_middle.png"
+                        alt="Шапка Стужа"
+                    >
 
                     <div class="card__info">
 
-                        <h3> <a href="#" class="card__link">
-                                Стужа </a> </h3>
+                        <h3>Стужа</h3>
 
                         <p>10 900 ₽</p>
-                   </div>
-                </article>
-                 </div>
-            </div>
-        </section>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
 
  <section class="store">
 
@@ -190,10 +212,12 @@ alt="Карта с расположением магазина «Мурнорк�
     </main>
 
   <footer class="footer">
+
     <div class="footer__contacts">
  <p>Мурнорка, 2026</p>
 
 <a href="mailto:murnorka@mail.ru">murnorka@mail.ru</a><br>
+
 <a href="tel:+73431111111">8 343 111-11-11</a>
     </div>
 
@@ -213,11 +237,7 @@ alt="Карта с расположением магазина «Мурнорк�
 </footer>
   
 </div>
-
+<script src="script.js"></script>
 </body>
 
-</html>
-    
-  </body>
-  
 </html>
